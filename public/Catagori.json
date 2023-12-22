@@ -1,0 +1,33 @@
+[
+    {
+      "id": 1,
+      "img": "https://i.ibb.co/B2Kv4VY/game-console.png",
+      "title": "Game Console"
+    },
+    {
+      "id": 2,
+      "img": "https://i.ibb.co/XxBKTCM/headphones.png",
+      "title": "Headphones"
+    },
+    {
+      "id": 3,
+      "img": "https://i.ibb.co/TrrnKFx/household-appliance.png",
+      "title": "Household Appliance"
+    },
+    {
+      "id": 4,
+      "img": "https://i.ibb.co/G0gnptF/smartphone.png",
+      "title": "Smartphone"
+    },
+    {
+      "id": 5,
+      "img": "https://i.ibb.co/7nBG5jn/smart-watch.png",
+      "title": "Smart Watch"
+    },
+    {
+      "id": 6,
+      "img": "https://i.ibb.co/nmS8Qjk/television.png",
+      "title": "Television"
+    }
+  ]
+  
