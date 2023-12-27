@@ -1,12 +1,12 @@
-import {createBrowserRouter} from "react-router-dom";
-import Root from "../Root";
-import Error from "../Error/Error";
-import Home from "../layout/Home/Home";
-import Shop from "../layout/Shop/Shop";
-import Add from "../layout/AddProdact/Add";
-import SignUP from "../layout/Log/SignUP";
-import Login from "../layout/Log/Login";
+import { createBrowserRouter } from "react-router-dom";
 import Details from "../Components/Product/Details";
+import Error from "../Error/Error";
+import Root from "../Root";
+import Add from "../layout/AddProdact/Add";
+import Home from "../layout/Home/Home";
+import Login from "../layout/Log/Login";
+import SignUP from "../layout/Log/SignUP";
+import Shop from "../layout/Shop/Shop";
 import PrivetRoute from "./PrivetRoute";
 
 
@@ -19,12 +19,12 @@ const router = createBrowserRouter([
         {
           path: "/",
           element: <Home/>,
-          loader: () => fetch('http://localhost:5000/product')
+          loader: () => fetch('https://server-sigma-pied.vercel.app/product')
         },
         {
           path: "/shop",
           element: <PrivetRoute><Shop/></PrivetRoute> ,
-          loader: ()=> fetch('http://localhost:5000/product')
+          loader: ()=> fetch('https://server-sigma-pied.vercel.app/product')
         },
         {
           path: "/AddProduct",
@@ -41,12 +41,12 @@ const router = createBrowserRouter([
         {
           path: "/product/:id",
           element: <PrivetRoute><Details/></PrivetRoute>,
-        loader: ({params}) => fetch(`http://localhost:5000/product/${params.id}`)
+        loader: ({params}) => fetch(`https://server-sigma-pied.vercel.app/product/${params.id}`)
         },
         {
           path: "/product/:id",
           element: <Details/>,
-        loader: ({params}) => fetch(`http://localhost:5000/product/${params.id}`)
+        loader: ({params}) => fetch(`https://server-sigma-pied.vercel.app/product/${params.id}`)
         },
       ],
     },

@@ -1,6 +1,6 @@
 import { useContext } from "react";
-import { Contexts } from "../../Context/Context";
 import Swal from "sweetalert2";
+import { Contexts } from "../../Context/Context";
 // import Post from "../../Components/ProductPost/Post";
 
 const Add = () => {
@@ -39,7 +39,7 @@ const Add = () => {
                     img: data.data.url,
                 }
 
-                fetch(`http://localhost:5000/product`, {
+                fetch(`https://server-2g6den7vt-shahriar-fardows.vercel.app/product`, {
                     method: 'POST',
                     headers: {
                         "Content-Type": "application/json",

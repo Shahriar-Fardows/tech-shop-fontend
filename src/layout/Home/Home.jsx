@@ -3,9 +3,14 @@ import Carousels from "../../Components/Carousel/Carousels";
 import OurBrand from "../../Components/OurBrand/OurBrand";
 import Product from "../../Components/OurProduct/Product";
 import Products from "../../Components/Product/Products";
+// import { useEffect } from "react";
 
 const Home = () => {
-    const loader = useLoaderData()
+    const loader = useLoaderData();
+    console.log(loader,'hello ');
+
+    // useEffect(()=>{
+    // },[])
     return (
         <div className="max-w-[90vw] mx-auto">
             <Carousels/>

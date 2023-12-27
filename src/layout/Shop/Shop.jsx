@@ -3,6 +3,7 @@ import Detailsss from "../../Components/Details/Detailsss";
 
 const Shop = () => {
     const loaderData = useLoaderData();
+    console.log(loaderData);
 
     return (
         <div className="max-w-[90vw] mx-auto my-10">
