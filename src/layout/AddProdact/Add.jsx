@@ -30,10 +30,8 @@ const Add = () => {
                 const productData = {
                     name,
                     title,
-                    brand,
                     Price,
                     description,
-                    // eslint-disable-next-line no-dupe-keys
                     brand,
                     userEmail,
                     img: data.data.url,
